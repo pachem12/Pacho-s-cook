@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pacho's Cook — restaurant africain à Abomey-Calavi. Repas sur place et livraison.">
+  <meta name="theme-color" content="#18251d">
+  <title>Pacho's Cook | Restaurant africain</title>
+  <style>
+    :root{--green:#18251d;--green2:#263b2e;--gold:#d8a84e;--cream:#f7f3eb;--ink:#20231f;--muted:#77796f}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:absolute;z-index:5;top:0;left:0;width:100%;color:white;padding:22px 0}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-family:Georgia,serif;font-size:1.5rem;font-weight:bold;letter-spacing:.4px}.brand span{color:var(--gold)}
+    nav{display:flex;gap:25px;font-size:.92rem}nav a:hover{color:var(--gold)}
+    .hero{min-height:690px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(10,19,13,.88),rgba(10,19,13,.36)),url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero-copy{max-width:660px;padding:140px 0 90px}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:bold}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.12}h1{font-size:clamp(3rem,7vw,5.8rem);margin:18px 0}h1 em{color:var(--gold);font-style:normal}
+    .hero p{font-size:1.12rem;max-width:530px;color:#eee}.btn{display:inline-block;padding:14px 23px;background:var(--gold);color:#1b211b;font-weight:bold;border-radius:3px;margin:15px 10px 0 0;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn-outline{background:transparent;border:1px solid #fff;color:white}
+    section{padding:82px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head h2{font-size:clamp(2.2rem,4vw,3.4rem);margin:10px 0}.section-head p{color:var(--muted)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-img{min-height:440px;border-radius:5px;background:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1100&q=85') center/cover}.about h2{font-size:3rem;margin:12px 0}.about p{color:var(--muted)}
+    .menu-section{background:#fff}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.dish{background:var(--cream);border-radius:5px;overflow:hidden}.dish img{width:100%;height:220px;object-fit:cover;display:block}.dish-body{padding:20px}.dish h3{font-size:1.45rem;margin:0 0 8px}.dish p{color:var(--muted);font-size:.93rem;margin:0}.price{display:inline-block;color:#8a6120;font-weight:bold;margin-top:12px;font-size:.9rem}
+    .services{background:var(--green);color:white}.services .section-head p{color:#c6cec6}.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.service{border:1px solid #536356;padding:28px;border-radius:5px}.service .symbol{font-size:2rem;color:var(--gold)}.service h3{font-size:1.6rem;margin:10px 0}.service p{color:#c6cec6;margin:0}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-card{background:#fff;padding:30px;border-radius:5px}.contact-card h3{font-size:1.7rem;margin-top:0}.contact-card p{color:var(--muted)}.contact-form label{display:block;font-weight:bold;font-size:.9rem;margin:14px 0 5px}.contact-form input,.contact-form textarea{width:100%;padding:13px;border:1px solid #ddd;background:#fff;font:inherit;border-radius:3px}.contact-form textarea{min-height:110px;resize:vertical}
+    footer{background:#101a14;color:#dce2dc;padding:28px 0;text-align:center;font-size:.9rem}footer strong{color:var(--gold)}
+    @media(max-width:760px){nav{gap:12px;font-size:.8rem}.about,.contact-grid{grid-template-columns:1fr}.about-img{min-height:300px}.menu-grid{grid-template-columns:1fr 1fr}.hero{min-height:620px}.service-grid{grid-template-columns:1fr}}
+    @media(max-width:500px){.nav{align-items:flex-start;flex-direction:column}nav{flex-wrap:wrap}.menu-grid{grid-template-columns:1fr}.dish img{height:230px}section{padding:62px 0}}
+  </style>
+</head>
+<body>
+  <!-- À PERSONNALISER : remplace le numéro ci-dessous par le WhatsApp du restaurant,
+       au format international sans + ni espaces, par exemple 229XXXXXXXX. -->
+  <script>const WHATSAPP_NUMBER = "229XXXXXXXX";</script>
+
+  <header><div class="wrap nav">
+    <a class="brand" href="#accueil">Pacho's <span>Cook</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#menu">Menu</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+  </div></header>
+
+  <main>
+    <section class="hero" id="accueil"><div class="wrap hero-copy">
+      <div class="eyebrow">Restaurant africain · Abomey-Calavi</div>
+      <h1>Le goût de l'Afrique,<br><em>à votre table.</em></h1>
+      <p>Bienvenue chez Pacho's Cook. Découvrez une cuisine inspirée des saveurs africaines, dans une ambiance chaleureuse. Profitez de nos repas sur place ou faites-vous livrer.</p>
+      <a class="btn" href="#menu">Découvrir le menu</a>
+      <a class="btn btn-outline" href="#contact">Commander</a>
+    </div></section>
+
+    <section id="apropos"><div class="wrap about">
+      <div class="about-img" role="img" aria-label="Assiette colorée de cuisine fraîche"></div>
+      <div><div class="eyebrow">Bienvenue chez Pacho's Cook</div><h2>Une cuisine généreuse, un accueil chaleureux.</h2>
+        <p>Pacho's Cook vous invite à partager le plaisir de la cuisine africaine. Que vous veniez déjeuner avec nous ou recevoir votre repas chez vous, notre priorité est de vous offrir un moment savoureux.</p>
+        <p><strong>Notre adresse :</strong> Abomey-Calavi, Bénin</p>
+        <a class="btn" href="#contact">Nous contacter</a>
+      </div>
+    </div></section>
+
+    <section class="menu-section" id="menu"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Nos suggestions</div><h2>À découvrir au menu</h2><p>Voici des exemples de plats pour présenter le site. Remplacez les noms, photos et prix par votre véritable carte avant publication.</p></div>
+      <div class="menu-grid">
+        <article class="dish"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" alt="Riz accompagné de légumes"><div class="dish-body"><h3>Riz gourmand</h3><p>Une suggestion de plat à personnaliser selon votre recette.</p><span class="price">Prix à compléter</span></div></article>
+        <article class="dish"><img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=900&q=80" alt="Poisson cuisiné et accompagnement"><div class="dish-body"><h3>Poisson braisé</h3><p>Une suggestion de spécialité à adapter à votre menu.</p><span class="price">Prix à compléter</span></div></article>
+        <article class="dish"><img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Viande grillée"><div class="dish-body"><h3>Grillades</h3><p>Une suggestion de grillade à remplacer par votre offre.</p><span class="price">Prix à compléter</span></div></article>
+      </div>
+    </div></section>
+
+    <section class="services" id="services"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">À votre service</div><h2>Comme vous aimez</h2><p>Profitez de Pacho's Cook selon vos envies.</p></div>
+      <div class="service-grid">
+        <div class="service"><div class="symbol">⌂</div><h3>Sur place</h3><p>Installez-vous et profitez d'un bon repas dans une ambiance accueillante.</p></div>
+        <div class="service"><div class="symbol">➜</div><h3>Livraison</h3><p>Contactez-nous pour organiser la livraison de votre commande.</p></div>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Restons en contact</div><h2>Une envie ? Parlons-en.</h2><p>Pour une commande ou une question, contactez Pacho's Cook.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Nous trouver</h3><p><strong>Restaurant :</strong> Pacho's Cook</p><p><strong>Ville :</strong> Abomey-Calavi, Bénin</p><p><strong>Services :</strong> Sur place et livraison</p><p>Ajoutez ici votre adresse précise, vos horaires et votre numéro de téléphone.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Abomey-Calavi%2C+B%C3%A9nin" target="_blank" rel="noopener">Voir Abomey-Calavi sur la carte</a></div>
+        <div class="contact-card"><h3>Envoyer une demande</h3>
+          <form class="contact-form" onsubmit="sendWhatsApp(event)">
+            <label for="customer">Votre nom</label><input id="customer" required placeholder="Votre nom">
+            <label for="message">Votre commande ou message</label><textarea id="message" required placeholder="Bonjour, je souhaite commander..."></textarea>
+            <button class="btn" type="submit" style="border:0;cursor:pointer">Envoyer sur WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> <strong>Pacho's Cook</strong> · Restaurant africain à Abomey-Calavi</div></footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function sendWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById("customer").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (WHATSAPP_NUMBER.includes("X")) {
+        alert("Le propriétaire doit d'abord ajouter le numéro WhatsApp du restaurant dans le fichier index.html.");
+        return;
+      }
+      const text = `Bonjour Pacho's Cook, je suis ${name}. ${message}`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+    }
+  </script>
+</body>
+</html>
